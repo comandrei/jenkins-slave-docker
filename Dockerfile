@@ -5,7 +5,7 @@ RUN curl -fsSL https://download.docker.com/linux/debian/gpg | apt-key add -
 RUN echo "deb [arch=amd64] https://download.docker.com/linux/debian stretch stable" >> /etc/apt/sources.list
 RUN apt-get update && apt-get install -y docker-ce docker-ce-cli containerd.io
 # Install awscli
-RUN pip3 install awscli
+RUN pip3 install awscli ecs-deploy
 RUN pip3 install docker-compose
 
 RUN apt-get install unzip
